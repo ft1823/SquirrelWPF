@@ -5,11 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SquirrelWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
+        <StackPanel Width="350" Margin="0">
+            <Label Name="lblUpdateavail" FontFamily="Segoe UI"  FontSize="20" Foreground="#ff707070"  Content="Version: 0.0.0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </StackPanel>
+
         <DockPanel Width="350" Margin="0">
             <Button Content="Update version" x:Name="btnversion"  Width="100" Height="30" Click="btnversion_Click"></Button>
-            <Label FontFamily="Segoe UI"  FontSize="20" Foreground="#ff707070"  Content="Version: 0.0.0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Label Name="lblVersion" FontFamily="Segoe UI"  FontSize="20" Foreground="#ff707070"  Content="Version: 0.0.0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </DockPanel>
+
     </Grid>
 </Window>
