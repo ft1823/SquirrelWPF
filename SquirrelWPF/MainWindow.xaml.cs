@@ -40,7 +40,7 @@ namespace SquirrelWPF
             manager = await UpdateManager
                .GitHubUpdateManager(@"https://github.com/ft1823/SquirrelWPF");
 
-            lblVersion.Content = manager.CurrentlyInstalledVersion().ToString();
+            lblVersion.Content = "Version: " + manager.CurrentlyInstalledVersion().ToString();
 
 
             var updateInfo = await manager.CheckForUpdate();
